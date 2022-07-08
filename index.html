@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Newslance</title>
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark sticky-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Newslance</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact Us</a>
+                    </li>
+                    <li class="nav-item dropdown scrollspy-example">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Country
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" onclick="countryChoosen(this.id)" id="ar" href="#">Argentina</a></li>
+                            <li><a class="dropdown-item" onclick="countryChoosen(this.id)" id="au" href="#">Australia</a></li>
+                            <li><a class="dropdown-item" onclick="countryChoosen(this.id)" id="at" href="#">Austria</a></li>
+                            <li><a class="dropdown-item" onclick="countryChoosen(this.id)" id="be" href="#">Belgium</a></li>
+                            <li><a class="dropdown-item" onclick="countryChoosen(this.id)" id="br" href="#">Brazil</a></li>
+                            <li><a class="dropdown-item" onclick="countryChoosen(this.id)" id="bg" href="#">Bulgaria</a></li>
+                            <li><a class="dropdown-item" onclick="countryChoosen(this.id)" id="ca" href="#">Canada</a></li>
+                            <li><a class="dropdown-item" onclick="countryChoosen(this.id)" id="cn" href="#">China</a></li>
+                            <li><a class="dropdown-item" onclick="countryChoosen(this.id)" id="co" href="#">Colombia</a></li>
+                            <li><a class="dropdown-item" onclick="countryChoosen(this.id)" id="cu" href="#">Cuba</a></li>
+                            <li><a class="dropdown-item" onclick="countryChoosen(this.id)" id="cz" href="#">Czech Republic</a></li>
+                            <li><a class="dropdown-item" onclick="countryChoosen(this.id)" id="eg" href="#">Egypt</a></li>
+                            <li><a class="dropdown-item" onclick="countryChoosen(this.id)" id="fr" href="#">France</a></li>
+                            <li><a class="dropdown-item" onclick="countryChoosen(this.id)" id="de" href="#">Germany</a></li>
+                            <li><a class="dropdown-item" onclick="countryChoosen(this.id)" id="gr" href="#">Greece</a></li>
+                            <li><a class="dropdown-item" onclick="countryChoosen(this.id)" id="hk" href="#">Hong Kong</a></li>
+                            <li><a class="dropdown-item" onclick="countryChoosen(this.id)" id="hu" href="#">Hungary</a></li>
+                            <li><a class="dropdown-item" onclick="countryChoosen(this.id)" id="in" href="#">India</a></li>
+                            <li><a class="dropdown-item" onclick="countryChoosen(this.id)" id="id" href="#">Indonesia</a></li>
+                            <li><a class="dropdown-item" onclick="countryChoosen(this.id)" id="ie" href="#">Ireland</a></li>
+                            <li><a class="dropdown-item" onclick="countryChoosen(this.id)" id="il" href="#">Israel</a></li>
+                            <li><a class="dropdown-item" onclick="countryChoosen(this.id)" id="it" href="#">Italy</a></li>
+                            <li><a class="dropdown-item" onclick="countryChoosen(this.id)" id="jp" href="#">Japan</a></li>
+                            <li><a class="dropdown-item" onclick="countryChoosen(this.id)" id="lv" href="#">Latvia</a></li>
+                            <li><a class="dropdown-item" onclick="countryChoosen(this.id)" id="lt" href="#">Lithuania</a></li>
+                            <li><a class="dropdown-item" onclick="countryChoosen(this.id)" id="my" href="#">Malaysia</a></li>
+                            <li><a class="dropdown-item" onclick="countryChoosen(this.id)" id="mx" href="#">Mexico</a></li>
+                            <li><a class="dropdown-item" onclick="countryChoosen(this.id)" id="ma" href="#">Morocco</a></li>
+                            <li><a class="dropdown-item" onclick="countryChoosen(this.id)" id="nl" href="#">Netherlands</a></li>
+                            <li><a class="dropdown-item" onclick="countryChoosen(this.id)" id="nz" href="#">New Zealand</a></li>
+                            <li><a class="dropdown-item" onclick="countryChoosen(this.id)" id="ng" href="#">Nigeria</a></li>
+                            <li><a class="dropdown-item" onclick="countryChoosen(this.id)" id="no" href="#">Norway</a></li>
+                            <li><a class="dropdown-item" onclick="countryChoosen(this.id)" id="ph" href="#">Philippines</a></li>
+                            <li><a class="dropdown-item" onclick="countryChoosen(this.id)" id="pl" href="#">Poland</a></li>
+                            <li><a class="dropdown-item" onclick="countryChoosen(this.id)" id="pt" href="#">Portugal</a></li>
+                            <li><a class="dropdown-item" onclick="countryChoosen(this.id)" id="ro" href="#">Romania</a></li>
+                            <li><a class="dropdown-item" onclick="countryChoosen(this.id)" id="ru" href="#">Russia</a></li>
+                            <li><a class="dropdown-item" onclick="countryChoosen(this.id)" id="sa" href="#">Saudi Arabia</a></li>
+                            <li><a class="dropdown-item" onclick="countryChoosen(this.id)" id="rs" href="#">Serbia</a></li>
+                            <li><a class="dropdown-item" onclick="countryChoosen(this.id)" id="sg" href="#">Singapore</a></li>
+                            <li><a class="dropdown-item" onclick="countryChoosen(this.id)" id="sk" href="#">Slovakia</a></li>
+                            <li><a class="dropdown-item" onclick="countryChoosen(this.id)" id="si" href="#">Slovenia</a></li>
+                            <li><a class="dropdown-item" onclick="countryChoosen(this.id)" id="za" href="#">South Africa</a></li>
+                            <li><a class="dropdown-item" onclick="countryChoosen(this.id)" id="kr" href="#">South Korea</a></li>
+                            <li><a class="dropdown-item" onclick="countryChoosen(this.id)" id="se" href="#">Sweden</a></li>
+                            <li><a class="dropdown-item" onclick="countryChoosen(this.id)" id="ch" href="#">Switzerland</a></li>
+                            <li><a class="dropdown-item" onclick="countryChoosen(this.id)" id="tw" href="#">Taiwan</a></li>
+                            <li><a class="dropdown-item" onclick="countryChoosen(this.id)" id="th" href="#">Thailand</a></li>
+                            <li><a class="dropdown-item" onclick="countryChoosen(this.id)" id="tr" href="#">Turkey</a></li>
+                            <li><a class="dropdown-item" onclick="countryChoosen(this.id)" id="ae" href="#">UAE</a></li>
+                            <li><a class="dropdown-item" onclick="countryChoosen(this.id)" id="ua" href="#">Ukraine</a></li>
+                            <li><a class="dropdown-item" onclick="countryChoosen(this.id)" id="gb" href="#">United Kingdom</a></li>
+                            <li><a class="dropdown-item" onclick="countryChoosen(this.id)" id="us" href="#">United States</a></li>
+                            <li><a class="dropdown-item" onclick="countryChoosen(this.id)" id="ve" href="#">Venezuela</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown scrollspy-example">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown2" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">Category</a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown2">
+                            <li><a class="dropdown-item" onclick="categoryChoosen(this.id)" id="business" href="#">Business</a></li>
+                            <li><a class="dropdown-item" onclick="categoryChoosen(this.id)" id="entertainment" href="#">Entertainment</a></li>
+                            <li><a class="dropdown-item" onclick="categoryChoosen(this.id)" id="health" href="#">Health</a></li>
+                            <li><a class="dropdown-item" onclick="categoryChoosen(this.id)" id="science" href="#">Science</a></li>
+                            <li><a class="dropdown-item" onclick="categoryChoosen(this.id)" id="sports" href="#">Sports</a></li>
+                            <li><a class="dropdown-item" onclick="categoryChoosen(this.id)" id="technology" href="#">Technology</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input id="searchTxt" class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-secondary" id="searchBtn">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container my-3" id="greeting">
+        <div class="position-relative">
+            <div class="position-absolute top-0 start-0">
+                <h4>Welcome to Newslance</h4>
+            </div>
+            <div class="position-absolute top-0 end-0 opacity-50" id="dateMain"></div>
+        </div>
+    </div>
+    <div class="container mt-sm-5">
+        <div class="row" id="newsColumn">
+            <h5 class="m-5">Choose Country to get top-news</h5>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="container mt-5">
+        <footer>
+            <div class="container border border-3 bg-dark bg-gradient rounded-3 col-md-5" style="--bs-bg-opacity: .4;">
+                <form class="m-5">
+                    <h5>Subscribe to our newsletter</h5>
+                    <p>Monthly digest of what's new and exciting from us.</p>
+                    <div class="d-flex flex-column flex-sm-row w-100 gap-2">
+                        <label for="newsletter1" class="visually-hidden">Email address</label>
+                        <input id="newsletter1" type="email" class="form-control" placeholder="Email address">
+                        <button class="btn btn-primary" type="button">Subscribe</button>
+                    </div>
+                </form>
+            </div>
+            <div class="py-3 my-3">
+                <ul class="nav justify-content-center border-bottom pb-3">
+                    <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Home</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Support</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">FAQs</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">About</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Contact Us</a></li>
+                </ul>
+            </div>
+            <p class="text-center text-muted">© 2022 Company, Inc</p>
+        </footer>
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
+    <script src="js/index.js"></script>
+</body>
+
+</html>
